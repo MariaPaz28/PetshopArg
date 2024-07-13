@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <script src="https://kit.fontawesome.com/10434a00a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css1/style.css">
+    <title>PetShop</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+        <div id="header-superior">
+
+
+            <div id="diferenciales">
+                <div class="diferencial">
+                    <h5>Compras online</h5>
+                </div>
+                <div class="diferencial">
+                    <h5>Pago contra entrega</h5>
+                </div>
+                <div class="diferencial">
+                    <h5>Entregas en el día</h5>
+                </div>
+
+
+                <div id="contacto-header">
+                    <p>
+                    <h5>Llámanos <span>555-555-555</span></h5><br><br>
+                    </p>
+                    <div id="iconos">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"
+                                style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-facebook-nuevo-50.png" alt="jaja">--></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"
+                                style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-instagram-50.png" alt="jaja">--></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter"
+                                style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-twitter-26.png" alt="jaja">--></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="header-inferior">
+            <div class="logo">
+                <a href="./index.html">
+                    <h4>Pet <i class="fa-solid fa-paw"></i><span>Shop</span></h4>
+                </a>
+            </div>
+            <nav>
+                <a href="index.html" target="_blank">Home</a>
+                <a href="nosotros.html" target="_blank">Nosotros</a>
+                <a href="servicios.html" target="_blank">Servicios</a>
+                <a href="./index.html#productos" target="_blank">Productos</a>
+                <a href="./index.html#contactenos" target="_blank">Contactenos</a>
+            </nav>
+
+            <div id="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="formularios">
+                <a class="btn-formularios" href="./login.html">Login</a>
+                <a class="btn-formularios" href="./registro.html">Registro</a>
+            </div>
+            <!-- CARRITO DE COMPRAS -->
+            <!-- LOGO Y SPAN CON CANTIDAD 0 -->
+            <div id="content-carrito">
+                <i id="carrito" class="fa-solid fa-cart-shopping"></i><span id="cantidad-productos">0</span>       
+            </div>
+         </div>
+
+
+    </header>
+
+<main>
+    <section>
+
+        <!-- <h2 class="title-section">Productos</h2>
+        <div id="app">
+            <!-- <p>{{datos}}</p> 
+            <div class="container">
+                <div v-for="elemento in datos" class="tarjetas">
+                    <div class="cuerpo">
+                            
+                            <img :src="elemento.imagen" :alt="elemento.nombre">
+                            <p id="parrafo-api">Nombre: {{elemento.nombre}}</p>
+                            <p id="parrafo-api2">Precio: {{elemento.precio}}</p>
+                            <p id="parrafo-api2">Stock: {{elemento.stock}}</p>
+                            <p id="parrafo-api2">Categoría: {{elemento.tipoproducto}}</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <h2 class="title-section">Productos Dogs</h2>
+            <dialog id="modalCarrito">
+                <h3>Mis productos</h3>
+                <table id="tablaProductos">
+                    <thead>
+                        <tr>
+                            <td>idProd</td>
+                            <td>Nombre Producto</td>
+                            <td>Descripción</td>
+                            <td>Inventario</td>
+                            <td>Imagen</td>
+                            <td>Precio</td>
+                            <td>Cantidad</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody_productos">
+
+                    </tbody>
+                </table>
+                <button id="btn_ocultar">Cerrar</button>
+            </dialog>
+            <section id="productos-perros">
+                
+            <div class="producto-perro">
+                <img src="./imagenes/nutrique-cachorro.webp" alt="">
+                <div class="contenido-producto">
+                    <h3>Nutrique 3kg</h3>
+                    <p class="precioProd">$23.724</p>
+                </div>
+                <section class="cant_unidades">
+                    <label for="cantidad" class="lb_cantProd">Cantidad</label>
+                <input type="number" class="input_cantProd">
+                </section>
+                <button class="button-card" onclick="agregarProducto()">Agregar</button>
+                <h6 class="idProducto">1</h6>
+            </div>
+    
+            <div class="producto-perro">
+                <img src="./imagenes/nutrique-adulto.webp" alt="">
+                <div class="contenido-producto">
+                    <h3>Nutrique 12kg</h3>
+                    <p class="precioProd">$56.952</p>
+                </div>
+                <section class="cant_unidades">
+                    <label for="cantidad" class="lb_cantProd">Cantidad</label>
+                <input type="number" class="input_cantProd">
+                </section>
+                <button class="button-card" onclick="agregarProducto()">Agregar</button>
+                <h6 class="idProducto">2</h6>
+            </div>
+    
+            <div class="producto-perro">
+                <img src="./imagenes/nutrique-especial.webp" alt="">
+                <div class="contenido-producto">
+                    <h3>Nutrique 15kg</h3>
+                    <p class="precioProd">$77.697</p>
+                </div>
+                <section class="cant_unidades">
+                    <label for="cantidad" class="lb_cantProd">Cantidad</label>
+                <input type="number" class="input_cantProd">
+                </section>
+                <button class="button-card" onclick="agregarProducto()">Agregar</button>
+                <h6 class="idProducto">3</h6>
+            </div>
+
+            <div class="producto-perro">
+                <img src="./imagenes/comedero.webp" alt="">
+                <div class="contenido-producto">
+                    <h3>Comedero acero</h3>
+                    <p class="precioProd">$2.952</p>
+                    
+                </div>
+                <section class="cant_unidades">
+                    <label for="cantidad" class="lb_cantProd">Cantidad</label>
+                <input type="number" class="input_cantProd">
+                </section>
+                <button class="button-card" onclick="agregarProducto()">Agregar</button>
+                <h6 class="idProducto">4</h6>
+            </div>
+    
+            <div class="producto-perro">
+                <img src="./imagenes/shampoo.webp" alt="">
+                <div class="contenido-producto">
+                    <h3>Shampoo</h3>
+                    <p class="precioProd">$4.968</p>
+                </div>
+                <section class="cant_unidades">
+                    <label for="cantidad" class="lb_cantProd">Cantidad</label>
+                <input type="number" class="input_cantProd">
+                </section>
+                <button class="button-card" onclick="agregarProducto()">Agregar</button>
+                <h6 class="idProducto">5</h6>
+            </div>
+    
+            <div class="producto-perro">
+                <img src="./imagenes/transportadora.webp" alt="">
+                <div class="contenido-producto">
+                    <h3>Transportadora</h3>
+                    <p class="precioProd">$263.700</p>
+                </div>
+                <section class="cant_unidades">
+                    <label for="cantidad" class="lb_cantProd">Cantidad</label>
+                    <input type="number" class="input_cantProd">
+                </section>
+                <button class="button-card" onclick="agregarProducto()">Agregar</button>
+                <h6 class="idProducto">6</h6>
+            </div>
+
+            <div class="producto-perro">
+                <img src="./imagenes/comedero.webp" alt="">
+                <div class="contenido-producto">
+                    <h3>Comedero acero</h3>
+                    <p class="precioProd">$2.952</p>
+                </div>
+                <section class="cant_unidades">
+                    <label for="cantidad" class="lb_cantProd">Cantidad</label>
+                    <input type="number" class="input_cantProd">
+                </section>
+                <button class="button-card" onclick="agregarProducto()">Agregar</button>
+                <h6 class="idProducto">7</h6>
+            </div>
+    
+            <div class="producto-perro">
+                <img src="./imagenes/shampoo.webp" alt="">
+                <div class="contenido-producto">
+                    <h3>Shampoo</h3>
+                    <p class="precioProd">$4.968</p>
+                </div>
+                <section class="cant_unidades">
+                    <label for="cantidad" class="lb_cantProd">Cantidad</label>
+                <input type="number" class="input_cantProd">
+                </section>
+                <button class="button-card" onclick="agregarProducto()">Agregar</button>
+                <h6 class="idProducto">8</h6>
+            </div>
+    
+            <div class="producto-perro">
+                <img src="./imagenes/transportadora.webp" alt="">
+                <div class="contenido-producto">
+                    <h3>Transportadora</h3>
+                    <p class="precioProd">$263.700</p>
+                </div>
+                <section class="cant_unidades">
+                    <label for="cantidad" class="lb_cantProd">Cantidad</label>
+                <input type="number" class="input_cantProd">
+                </section>
+                <button class="button-card" onclick="agregarProducto()">Agregar</button>
+                <h6 class="idProducto">9</h6>
+            </div>
+        
+    </section>
+
+    </main>
+
+           
+    
+        
+        
+        
+        
+
+
+
+
+        
+
+    <footer>
+
+
+        <div class="header-inferior">
+            <div class="logo">
+                <a href="#">
+                    <h4>Pet<span>Shop</span></h4>
+                </a>
+            </div>
+
+            <div>
+                <div id="iconos_footer">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"
+                            style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-facebook-nuevo-50.png" alt="jaja">--></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"
+                            style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-instagram-50.png" alt="jaja">--></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter"
+                            style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-twitter-26.png" alt="jaja">--></a>
+                            
+                </div>
+                <div>
+                    <h6>&#169 Desarrollado por A prueba y error</h6>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- LLAMANDO A VUE -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- LLAMANDO A JS -->
+    <script src="js/carrito.js"></script>
+    <script src="js/main.js"></script>
+    
+
+    
+
+</body>
+
+</html>

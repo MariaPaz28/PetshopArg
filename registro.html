@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <link rel="stylesheet" href="./css1/style.css">
+    <script src="https://kit.fontawesome.com/10434a00a4.js" crossorigin="anonymous"></script>
+    <title>PetShop</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div id="header-superior">
+
+            <div id="diferenciales">
+
+                <h5>Compras online</h5>
+                <h5>Pago contra entrega</h5>
+                <h5>Entregas el mismo día</h5>
+                <div id="contacto-header">
+                    <h5>Llámanos <span>555-555-555</span></h5>
+                    <h5>Escríbenos</h5>
+                    <div id="iconos">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f" style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-facebook-nuevo-50.png" alt="jaja">--></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram" style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-instagram-50.png" alt="jaja">--></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter" style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-twitter-26.png" alt="jaja">--></a>
+                    </div>  
+                </div>
+            </div>
+
+
+        </div>
+        <div class="header-inferior">
+            <div class="logo">
+                
+                    <a href="./index.html"><h4>Pet <i class="fa-solid fa-paw"></i><span>Shop</span></h4></a>
+
+
+            </div>
+            <nav>
+                <a href="./index.html" target="_blank">Home</a>
+                <a href="nosotros.html" target="_blank">Nosotros</a>
+                <a href="servicios.html" target="_blank">Servicios</a>
+                <a href="./index.html#productos" target="_blank">Productos</a>
+                <a href="./index.html#contactenos" target="_blank">Contactenos</a>
+            </nav>
+            <div id="formularios">
+                <a class="btn-formularios" href="./login.html">Login</a>
+                <a class="btn-formularios" href="./registro.html">Registro</a>
+            </div>
+        </div>
+
+    </header>
+    <main
+        style="height: 140vh; background-image: url(https://e1.pxfuel.com/desktop-wallpaper/734/795/desktop-wallpaper-pets-animal-cute-puppies-dog-faimly-of-dogs.jpg);">
+        <div class="traslucido-formulario">
+            <div id="cuadro">
+                <form id="registro" action=""> <!--para iniciar el formulario-->
+                    <div class="cuadro">
+                        <h2 class="title-section">Registro</h2>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contraseña">Contraseña:</label>
+                                <input type="password" id="contraseña" name="contraseña" required>
+                            </div>
+          
+
+                            <button class="button-form" id="button-registro" onclick="registrar()">Enviar</button>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+        <div class="header-inferior">
+            <div class="logo">
+                <a href="#">
+                    <h4>Pet<span>Shop</span></h4>
+                </a>
+
+            </div>
+
+            <div>
+                <div id="iconos_footer">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"
+                            style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-facebook-nuevo-50.png" alt="jaja">--></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"
+                            style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-instagram-50.png" alt="jaja">--></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter"
+                            style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-twitter-26.png" alt="jaja">--></a>
+                            
+                </div>
+                <div>
+                    <h6>&#169 Desarrollado por A prueba y error</h6>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="js/carrusel.js"></script>
+</body>
+
+</html>

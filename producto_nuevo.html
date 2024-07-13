@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Producto Nuevo</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <script src="https://kit.fontawesome.com/10434a00a4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css1/style.css">
+</head>
+<body>
+  <header id="header">
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <div class="container" id="app">
+      <h1>Alta de Producto</h1>
+       <form  class="form-bd">
+        
+       
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" v-model="nombre">
+        
+        
+          <label for="precio">Precio</label>
+          <input type="number" name="precio" id="precio" v-model="precio">
+       
+          <label for="stock">Stock</label>
+          <input type="number" name="stock" id="stock" v-model="stock">
+
+          <label for="imagen">Imagen</label>
+          <input type="text" name="imagen" id="imagen" v-model="imagen">
+          <img width="100" :src="imagen" alt="">
+       
+            <label for="tipo_producto">Categoria</label>
+            <input type="text" name="tipo_producto" id="tipoProducto" v-model="tipocategoria">
+          
+          <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+ 
+  <!-- <script src="/js/main.js"></script> -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+   <script src="/js/header.js"></script>
+    <script src="/js/productos.js"></script>
+    
+</body>
+</html>

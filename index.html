@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <script src="https://kit.fontawesome.com/10434a00a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css1/style.css">
+    <title>PetShop</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+        <div id="header-superior">
+
+
+            <div id="diferenciales">
+                <div class="diferencial">
+                    <h5>Compras online</h5>
+                </div>
+                <div class="diferencial">
+                    <h5>Pago contra entrega</h5>
+                </div>
+                <div class="diferencial">
+                    <h5>Entregas en el día</h5>
+                </div>
+
+
+                <div id="contacto-header">
+                    <p>
+                    <h5>Llámanos <span>555-555-555</span></h5><br><br>
+                    </p>
+                    <div id="iconos">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"
+                                style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-facebook-nuevo-50.png" alt="jaja">--></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"
+                                style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-instagram-50.png" alt="jaja">--></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter"
+                                style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-twitter-26.png" alt="jaja">--></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="header-inferior">
+            <div class="logo">
+                <a href="index.html" target="_blank">
+                    <h4>Pet <i class="fa-solid fa-paw"></i><span>Shop</span></h4>
+                </a>
+            </div>
+            <nav>
+                <a href="index.html" target="_blank">Home</a>
+                <a href="nosotros.html" target="_blank">Nosotros</a>
+                <a href="servicios.html" target="_blank">Servicios</a>
+                <a href="#productos">Productos</a>
+                <a href="#contactenos">Contactenos</a>
+                <i class></i>
+            </nav>
+            <div id="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="formularios">
+                <a class="btn-formularios" href="./login.html">Login</a>
+                <a class="btn-formularios" href="./registro.html">Registro</a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <div id="traslucido">
+
+            <section id="gallery">
+                <div class="gallery-container">
+                    <figure class="gallery-item">
+                        <img src="https://www.fucsia.co/resizer/q8T7rHpctAoiyeQlbpTs6NT7ylU=/1280x0/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/GBYSNEBUHJBQNJ6JLEFR5BJLXM.jpg"
+                            alt="">
+                        <div class="content">
+                            <h1>Bienvenido a tu tienda</h1>
+                            <p>En nuestro pet shop nos apasiona el
+                                bienestar y la felicidad de tus amigos peludos. Nuestro objetivo es proporcionar todo lo
+                                que necesitas para cuidar a tu mascota, desde productos de alta calidad hasta servicios
+                                personalizados.</p>
+                        </div>
+
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://mott.pe/noticias/wp-content/uploads/2016/05/tr%C3%ADo-de-mascotas-1-1.png"
+                            alt="">
+                        <div class="content">
+                            <h1>Alimentación Balanceada</h1>
+                            <p>Sabemos que la salud y felicidad de tu mascota dependen de una alimentación adecuada. Por
+                                eso, ofrecemos una selección de alimentos
+                                balanceados especialmente formulados para satisfacer las necesidades nutricionales
+                                de tu amigo peludo.</p>
+                        </div>
+
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://s1.eestatic.com/2020/08/26/curiosidades/mascotas/mascotas-perros-mascotas_515959375_158488465_1706x960.jpg"
+                            alt="">
+                        <div class="content">
+                            <h1>Accesorios para su Comodidad <i class="fa-solid fa-shield-cat"></i></h1>
+                            <p> Ofrecemos los mejores accesorios para tu mascota, combinando
+                                calidad, confort y estilo. Para ello, hemos seleccionado cuidadosamente los mejores
+                                productos
+                                del mercado para garantizar su comodidad, seguridad y diversión.</p>
+                        </div>
+
+                    </figure>
+                    <!-- ... otras imágenes ... -->
+                </div>
+                <nav class="gallery-navigation">
+                    <button class="nav-button prev-button">&#x25C1</button>
+                    <button class="nav-button next-button">&#x25B7</button>
+                </nav>
+            </section>
+
+        </div>
+
+    </main>
+
+    <section id="main-productos">
+
+        <h2 class="title-section">Productos</h2>
+
+        <div id="productos">
+
+            <!-- EL ONCLICK ES PARA APRETAR LA TARJETA Y QUE ME REDIRIJA A OTRA PARTE -->
+            <div class="producto" onclick="window.location.href='productos-perros.html'">
+
+
+                <div class="img-producto">
+                    <img src="./imagenes/perro.jpg" alt="">
+                </div>
+                <div class="conten-producto">
+                    <h4>
+                        Perros
+                    </h4>
+                    <p>Productos para tu perro </p>
+
+                </div>
+            </div>
+            <div class="producto" onclick="window.location.href='productos-gatos.html'">
+                <div class="img-producto">
+                    <img src="./imagenes/gato.jpg" alt="">
+                </div>
+                <div class="conten-producto">
+                    <h4>
+                        Gatos </h4>
+                    <p>Productos para tu gato </p>
+
+                </div>
+            </div>
+            <div class="producto" onclick="window.location.href='productos-otros.html'">
+                <div class="img-producto">
+                    <img src="./imagenes/hamster.jpg" alt="">
+                </div>
+                <div class="conten-producto">
+                    <h4>
+                        Otros
+                    </h4>
+                    <p>Productos para otras mascotas </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contactenos">
+        <div class="traslucido-formulario">
+          <div class="section-content">
+            <h2 class="title-section">Contacto</h2>
+            <div id="contenido-contactenos">
+                <form id="form-contacto" action="#">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+
+                    <!-- RADIOBUTTON -->
+
+                    <div id="radio">
+                        <label for="genero">Mascota:</label>
+                        <input class="radio2" type="radio" name="genero" value="perro" id="perro"> <label class="lb_radio" for="perro">Perro</label>
+                        <input class="radio2" type="radio" name="genero" value="gato" id="gato"> <label class="lb_radio" for="gato">Gato</label>
+                        <input class="radio2" type="radio" name="genero" value="otro" id="otro"> <label class="lb_radio" for="otro">Otro</label>
+                    </div>
+
+                    <!-- SELECT -->
+
+                    <label for="estudio">Edad de la mascota:</label>
+                    <div>
+                        <select name="estudio" id="select">
+                            <option value="Cachorro" name="select">Cachorro</option>
+                            <option value="Adulto" name="select">Adulto</option>
+                            <option value="Senior" name="select">Senior</option>
+                        </select>
+                    </div>
+
+
+                    <label for="comentarios"> Consulta</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="5"></textarea>
+                    <div id="content-btn">
+                        <button class="button-form" id="button-contacto" onclick="consultar()">Enviar</button>
+
+                    </div>
+
+                </form>
+                <div id="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.474939682841!2d-64.1873952251174!3d-31.428589396840017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28ddf861391%3A0xc0fdcfc930551a76!2sPlaza%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1716998977251!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+    </section>
+
+    <footer id="footer">
+
+
+        <div class="header-inferior">
+            <div class="logo">
+                <a href="#">
+                    <h4>Pet<span>Shop</span></h4>
+                </a>
+                
+            </div>
+            <div>
+                <div id="iconos_footer">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"
+                            style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-facebook-nuevo-50.png" alt="jaja">--></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"
+                            style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-instagram-50.png" alt="jaja">--></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter"
+                            style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-twitter-26.png" alt="jaja">--></a>
+                            
+                </div>
+                <div>
+                    <h6 id="copyright">&#169 Desarrollado por A prueba y error</h6>
+                </div>
+            </div>
+            
+        </div>
+        
+    </footer>
+
+    <script src="js/carrusel.js"></script>
+
+</body>
+
+</html>

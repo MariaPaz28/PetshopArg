@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <script src="https://kit.fontawesome.com/10434a00a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css1/style.css">
+    <title>PetShop</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+        <div id="header-superior">
+
+
+            <div id="diferenciales">
+                <div class="diferencial">
+                    <h5>Compras online</h5>
+                </div>
+                <div class="diferencial">
+                    <h5>Pago contra entrega</h5>
+                </div>
+                <div class="diferencial">
+                    <h5>Entregas en el día</h5>
+                </div>
+
+
+                <div id="contacto-header">
+                    <h5>Llámanos <span>555-555-555</span></h5>
+                    <h5>Escríbenos</h5>
+                    <div id="iconos">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f" style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-facebook-nuevo-50.png" alt="jaja">--></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram" style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-instagram-50.png" alt="jaja">--></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter" style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-twitter-26.png" alt="jaja">--></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="header-inferior">
+            <div class="logo">
+                    <a href="./index.html"><h4>Pet <i class="fa-solid fa-paw"></i><span>Shop</span></h4></a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="./index.html#productos">Productos</a>
+                <a href="./index.html#contactenos">Contactenos</a>
+            </nav>
+
+            <div id="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="formularios">
+                <a class="btn-formularios" href="./login.html">Login</a>
+                <a class="btn-formularios" href="./registro.html">Registro</a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <!-- SECCIÓN SERVICIOS -->
+        <!-- CONSUMIENDO API -->
+
+        <section>
+
+            <h2 class="title-section">Nuestros Servicios</h2>
+            <div id="app">
+                <!-- <p>{{datos}}</p> -->
+                <div class="container">
+                    <div v-for="elemento in datos" class="tarjetas">
+                        <div class="cuerpo">
+                                <p id="parrafo-api"> {{elemento.nombre}}</p>
+                                <p id="parrafo-api2"> {{elemento.descripcion}}</p>
+                                <img :src="elemento.foto" :alt="elemento.nombre">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- LLAMANDO A VUE -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+        <!-- LLAMANDO A JS -->
+        <script src="js/main.js"></script>
+</main>
+
+<footer>
+
+
+    <div class="header-inferior">
+        <div class="logo">
+            <a href="#">
+                <h4>Pet<span>Shop</span></h4>
+            </a>
+        </div>
+
+        <div>
+            <div id="iconos_footer">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"
+                        style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-facebook-nuevo-50.png" alt="jaja">--></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"
+                        style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-instagram-50.png" alt="jaja">--></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter"
+                        style="color: white; font-size: 1em;"></i><!--<img src="./imagenes/icons8-twitter-26.png" alt="jaja">--></a>
+                        
+            </div>
+            <div>
+                <h6>&#169 Desarrollado por A prueba y error</h6>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+
+
+</html>
+

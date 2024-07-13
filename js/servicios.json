@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Balanceados",
+        "descripcion": "Nuestros productos están formulados con ingredientes de alta calidad para garantizar una nutrición completa y equilibrada. ",
+        "foto": "./imagenes/alimentos.jpg"
+    },
+    {
+        "nombre": "Accesorios",
+        "descripcion":"Con nuestros accesorios aseguramos la máxima comodidad, durabilidad y estilo para que tu mascota se sienta feliz y amada.",
+        "foto": "./imagenes/accesorios.jpg"
+    },
+    {
+        "nombre": "Estética",
+        "descripcion": "Realizamos baños, cortes de pelo, limpieza de oídos y corte de uñas con productos de alta calidad para cada tipo de mascota.",
+        "foto": "./imagenes/baño y peluqueria.jpg"
+    },
+    {
+        "nombre": "Veterinaria",
+        "descripcion": "Servicio de veterinaria de primera calidad para asegurar la salud y el bienestar de tu mascota. ",
+        "foto": "./imagenes/servicio veterinario.jpg"
+    },
+    {
+        "nombre": "Paseos",
+        "descripcion": " Servicio de paseos para que tu mascota disfrute de ejercicio regular y diversión al aire libre. ",
+        "foto": "./imagenes/paseos.jpg"
+    },
+    {
+        "nombre": "Guardería",
+        "descripcion": "Ofrecemos un servicio de guardería de confianza para que tu mascota reciba el mejor cuidado mientras estás ausente",
+        "foto": "./imagenes/guarderia.jpg"
+    }
+]
